@@ -29,6 +29,10 @@ class ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5
         array (
             'Demo\\' => 5,
         ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -56,10 +60,10 @@ class ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5
         array (
             0 => __DIR__ . '/../..' . '/src/Demo',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -77,7 +81,6 @@ class ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit1ae220d08dd03d33f88604d5df7ebfc5::$prefixesPsr0;
 
         }, null, ClassLoader::class);
