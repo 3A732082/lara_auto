@@ -6,7 +6,11 @@ use Demo\Hello\Lara;
 use Demo\Hello;
 
 $world= new World();
+
 $lara=new Lara();
+
 $vincent=new Hello\Someone('Vincent');
+
 $mary=new Hello\Someone('Mary');
+
 $john=new Hello\Someone('John');

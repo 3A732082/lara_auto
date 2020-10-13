@@ -8,6 +8,6 @@ class Lara
 {
     function __construct()
     {
-        echo 'Hellow Lara~!'.PHP_EOL;
+        echo 'Hellow Lara~!<br>'.PHP_EOL;
     }
 }
