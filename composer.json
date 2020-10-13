@@ -2,9 +2,14 @@
     "name": "tkmk7/lara_auto",
     "authors": [
         {
-            "name": "江河 林",
+            "name": "江閤 林",
             "email": "tkmk7q8qq@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+        "autoload": {
+            "psr-4": {
+                "Demo\\":"src/Demo"
+            }
+        }
 }
